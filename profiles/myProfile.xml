@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<profiles:profiles xmlns:profiles="http://www.bonitasoft.org/ns/profile/6.1">
+    <profile name="myCustomProfile" isDefault="false">
+        <profileEntries>
+            <parentProfileEntry name="Tasks" isCustom="false">
+                <index>0</index>
+                <description>Manage tasks</description>
+                <type>link</type>
+                <page>tasklistinguser</page>
+                <childrenEntries/>
+            </parentProfileEntry>
+            <parentProfileEntry name="Cases" isCustom="false">
+                <index>1</index>
+                <description>Manage cases</description>
+                <type>link</type>
+                <page>caselistinguser</page>
+                <childrenEntries/>
+            </parentProfileEntry>
+            <parentProfileEntry name="Processes" isCustom="false">
+                <index>2</index>
+                <description>Manage Processes</description>
+                <type>link</type>
+                <page>processlistinguser</page>
+                <childrenEntries/>
+            </parentProfileEntry>
+        </profileEntries>
+        <profileMapping>
+            <users/>
+            <groups/>
+            <memberships/>
+            <roles>
+                <role>member</role>
+            </roles>
+        </profileMapping>
+    </profile>
+</profiles:profiles>
