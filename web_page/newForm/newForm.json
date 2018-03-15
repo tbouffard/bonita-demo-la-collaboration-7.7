@@ -1,0 +1,263 @@
+{
+  "designerVersion" : "1.7.27",
+  "id" : "newForm",
+  "name" : "newForm",
+  "lastUpdate" : 1521106521859,
+  "rows" : [ [ {
+    "type" : "container",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : { },
+    "reference" : "0936da62-4450-40cc-ba0a-006ae24cdc82",
+    "id" : "pbContainer",
+    "rows" : [ [ {
+      "type" : "component",
+      "dimension" : {
+        "md" : 12,
+        "sm" : 12,
+        "xs" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "readonly" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "level" : {
+          "type" : "constant",
+          "value" : "Level 1"
+        },
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "widgetId" : {
+          "type" : "constant",
+          "value" : "pbTitle"
+        },
+        "isDisplayed" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "label" : {
+          "type" : "interpolation"
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "{{ task.displayName }}"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "center"
+        },
+        "class" : {
+          "type" : "constant",
+          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TitleWidget"
+        },
+        "dimension" : {
+          "type" : "constant",
+          "value" : 12
+        }
+      },
+      "reference" : "c7305a65-8952-4f5b-a5bf-af94b4faf7c2",
+      "id" : "pbTitle"
+    } ], [ {
+      "type" : "component",
+      "dimension" : {
+        "md" : 12,
+        "sm" : 12,
+        "xs" : 12,
+        "lg" : 12
+      },
+      "propertyValues" : {
+        "labelHidden" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "readonly" : {
+          "type" : "constant",
+          "value" : false
+        },
+        "cssClasses" : {
+          "type" : "constant",
+          "value" : ""
+        },
+        "widgetId" : {
+          "type" : "constant",
+          "value" : "pbText"
+        },
+        "isDisplayed" : {
+          "type" : "constant",
+          "value" : true
+        },
+        "label" : {
+          "type" : "interpolation"
+        },
+        "text" : {
+          "type" : "interpolation",
+          "value" : "{{ task.displayDescription }}"
+        },
+        "alignment" : {
+          "type" : "constant",
+          "value" : "left"
+        },
+        "class" : {
+          "type" : "constant",
+          "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.TextWidget"
+        },
+        "dimension" : {
+          "type" : "constant",
+          "value" : 12
+        }
+      },
+      "reference" : "ef023fed-70ce-469c-a451-70f666161482",
+      "id" : "pbText"
+    } ] ]
+  } ], [ {
+    "type" : "formContainer",
+    "dimension" : {
+      "xs" : 12
+    },
+    "propertyValues" : { },
+    "reference" : "e02bc914-e9be-4714-810f-6aa84348c3e7",
+    "id" : "pbFormContainer",
+    "container" : {
+      "type" : "container",
+      "dimension" : {
+        "xs" : 12
+      },
+      "propertyValues" : { },
+      "reference" : "77a19a14-9ca2-434e-95fa-40156d7f46c9",
+      "id" : "pbContainer",
+      "rows" : [ [ {
+        "type" : "component",
+        "dimension" : {
+          "md" : 12,
+          "sm" : 12,
+          "xs" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "removeItem" : {
+            "type" : "variable"
+          },
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "widgetId" : {
+            "type" : "constant",
+            "value" : "pbButton"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "primary"
+          },
+          "isDisplayed" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Submit"
+          },
+          "dataToSend" : {
+            "type" : "expression",
+            "value" : "formOutput"
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "readonly" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "collectionPosition" : {
+            "type" : "constant"
+          },
+          "targetUrlOnSuccess" : {
+            "type" : "interpolation",
+            "value" : "/bonita"
+          },
+          "action" : {
+            "type" : "constant",
+            "value" : "Submit task"
+          },
+          "collectionToModify" : {
+            "type" : "variable"
+          },
+          "valueToAdd" : {
+            "type" : "expression"
+          },
+          "disabled" : {
+            "type" : "expression",
+            "value" : "$form.$invalid"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "center"
+          },
+          "class" : {
+            "type" : "constant",
+            "value" : "org.bonitasoft.web.designer.experimental.parametrizedWidget.ButtonWidget"
+          },
+          "dimension" : {
+            "type" : "constant",
+            "value" : 12
+          }
+        },
+        "reference" : "d4e28fbe-05c7-4007-a5c9-b34d68ac0c8d",
+        "id" : "pbButton"
+      } ] ]
+    }
+  } ] ],
+  "assets" : [ {
+    "id" : "bea78ff8-0fe1-4c5e-9253-c2d7c7e9c45c",
+    "name" : "localization.json",
+    "type" : "json",
+    "order" : 0,
+    "external" : false
+  }, {
+    "id" : "f4ee7fa4-b3bc-4fda-99d5-0a87a7c68aa0",
+    "name" : "style.css",
+    "type" : "css",
+    "order" : 0,
+    "external" : false
+  } ],
+  "inactiveAssets" : [ ],
+  "data" : {
+    "task" : {
+      "type" : "url",
+      "value" : "../API/bpm/userTask/{{taskId}}",
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "json",
+      "value" : "{ }",
+      "exposed" : false
+    },
+    "formOutput" : {
+      "type" : "expression",
+      "value" : "return {\n\n};",
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : "../API/bpm/userTask/{{taskId}}/context",
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : "id",
+      "exposed" : false
+    }
+  },
+  "uuid" : "70224779-c64d-4656-97b2-787aa82b062d",
+  "type" : "form"
+}
