@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <profiles:profiles xmlns:profiles="http://www.bonitasoft.org/ns/profile/6.1">
     <profile name="myCustomProfile" isDefault="false">
+        <description>A super profile to be a super admin</description>
         <profileEntries>
             <parentProfileEntry name="Tasks" isCustom="false">
                 <index>0</index>
